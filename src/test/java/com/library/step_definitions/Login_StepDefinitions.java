@@ -22,15 +22,15 @@ public class Login_StepDefinitions {
     @Then("user should land on {string} module")
     public void user_should_land_on_module(String page) {
 
-        String currentUrl = Driver.getDriver().getCurrentUrl();
-
-        System.out.println(currentUrl);
+       // System.out.println(currentUrl);
 
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
 
         wait.until(ExpectedConditions.urlContains(page));
 
-       // Assert.assertTrue(currentUrl.contains(page));
+        String currentUrl = Driver.getDriver().getCurrentUrl();
+
+        Assert.assertTrue(currentUrl.contains(page));
     }
 
 }
