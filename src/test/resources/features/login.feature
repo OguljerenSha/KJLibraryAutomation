@@ -1,6 +1,7 @@
+@smoke_test
 Feature: Verify both students and librarians can login and land on their respective pages
 
-   @1
+
   Scenario Outline: Users can login and land to main pages
 
     Given user login as a "<role>"
