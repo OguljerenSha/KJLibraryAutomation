@@ -32,4 +32,10 @@ public class LoginPage {
         }
     }
 
+    public void loginAsAStudent(){
+        inputUser.sendKeys(ConfigurationReader.getProperty("studentUser11"));
+        inputPass.sendKeys(ConfigurationReader.getProperty("studentPass11"));
+        signInButton.click();
+    }
+
 }
