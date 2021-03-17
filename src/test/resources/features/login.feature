@@ -1,4 +1,4 @@
-@smoke_test
+@smoke_test1
 Feature: Verify both students and librarians can login and land on their respective pages
 
 
